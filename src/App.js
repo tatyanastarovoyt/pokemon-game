@@ -10,7 +10,7 @@ function App() {
          Hello World!!!
         </p> */}
         <p>
-          Hi everyone and company! 
+          Hi Tatyana! 
         </p>
         <a
           className="App-link"
@@ -18,7 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn goole
+          Learn google
         </a>
       </header>
     </div>
