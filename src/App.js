@@ -12,14 +12,14 @@ function App() {
         <p>
           Hello Vinnitsa!!!
         </p>
-        {/* <a
+        <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React AAAAAAA
-        </a> */}
+        </a>
       </header>
     </div>
   );
