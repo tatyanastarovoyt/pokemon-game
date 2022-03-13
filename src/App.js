@@ -10,7 +10,7 @@ function App() {
          Hello World!!!
         </p> */}
         <p>
-          Hello Vinnitsa!!!
+          Hi everyone!
         </p>
         <a
           className="App-link"
