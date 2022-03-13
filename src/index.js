@@ -1,14 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
 
+// const el1 = React.createElement(
+// "h4",
+// null,
+// "Hello World, React.js!"
+// );
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const el = (
+  <div>
+    <h1>Hello World!</h1>
+    <ul>
+      <li>My First Elements</li>
+      <li>My Second Elements</li>
+    </ul> 
+ </div>
 );
 
+ReactDOM.render(el, document.getElementById("root"));
 
