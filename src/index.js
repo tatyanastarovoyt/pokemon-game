@@ -1,30 +1,50 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom"; 
 
 const AppList = () => {
+    const items = ["Items 1", "Items 2", "Item 3", "Item 4"];
+    const firstItems = <li>Items 0</li>;
+
+    const isAuth = false;
+
+    return (
+        <ul>
+      {
+          isAuth ? firstItems : null
+      }
+      {
+          items.map(item => <li>{item}</li>)
+      }
+      <li>{ items [0] }</li>
+      <li>{ items [1] }</li>
+        </ul> 
+  );
+}
+
+const AppHeader = () => <h1 className="App-header">This is my Header!</h1>;
+
+const AppInput = () => {
+    const placeholder = "Type - text...";
+
   return (
-    <ul>
-      <li>My First Elements</li>
-      <li>My Second Elements</li>
-    </ul> 
-  )
+    <label htmlFor="search">
+        <input
+          id="search"
+          placeholder={placeholder}
+        />
+    <label>
+    )
 }
-
-const Image = () => {
-  return <img src="https://www.theknot.com/tk-media/images/8d7f9239-ddb5-47e7-8c81-eb39283c8262~rs_768.h" alt="IMAGE NULL" width="200" height="150s"/>
-}
-
-const AppHeader = () => <h2>Hello World!!!!!!</h2>
 
 const App = () => {
-  return <div>
-    {/* <Image /> */}
-    <AppHeader />
-    <AppList />
-    <Image />
-
-  </div>
+return (
+    
+            <AppHeader />
+            <AppList />
+            <AppHeader />
+            <AppList />
+      <>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
